@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(0, 204, 255);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 119, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 48px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(16px, 3vw, 32px);
+}
+
+h3 {
+    font-size: clamp(18px, 3vw, 32px);
+    background: linear-gradient(to bottom right, orange 60%, rgb(0, 204, 255) 0%);
+    color: white;
+    padding: 32px;
+    margin: 0;
+}
+
+#logo {
+    font-size: max(3vw, 32pt);
+    font-weight: bold;
+    margin: 0;
+}
+
+#logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#logo_container div {
+    margin: 0px 32px;
+}
+
+#logo_container div h1 {
+    text-align: center;
+    font-size: max(3vw, 16pt);
+    margin: 0;
+}
+
+#logo_container div h2 {
+    text-align: center;
+    margin: 0;
+    font-size: max(2vw, 12pt);
+}
+
+#splash {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 48px);
+    justify-content: space-between;
+}
+
+#splash img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#splash .row:nth-child(3) {
+    justify-content: space-around;
+}
+
+#splash .row > a {
+    border: 8px solid orange;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: max(2vw, 16pt);
+    text-decoration: none;
+    margin-bottom: max(10%, 64px);
+}
+
+#splash a div {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#splash a p {
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+}
+
+
+
+.splash_info {
+    background-color: rgba(255, 255, 255, 0.719);
+    width: auto;
+    padding: min(5%, 32px);
+    font-size: max(1.5vw, 10pt);
+    margin-bottom: clamp(64px, 10%, 128px);
+}
+
+
+
+
+
+#services img {
+    width: clamp(32px, 2vw, 64px);
+    height: clamp(32px, 2vw, 64px);
+    margin: 8px;
+}
+
+#services p {
+    font-size: clamp(16px, 2vw, 24px);
+    margin: 0;
+}
+
+#services .row {
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: white;
+    margin: clamp(8px, 5%, 32px);
+    width: auto;
+}
+
+
+#services .row .row {
+    justify-content: flex-start;
+    padding: 16px 0;
+    align-items: center;
+}
+
+
+
+
+#rates .row {
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    margin: clamp(8px, 5%, 32px);
+    padding: clamp(8px, 5%, 32px);
+    width: auto;
+}
+
+#rates p {
+     font-size: clamp(16px, 2vw, 24px);
+}
+
+#rates a {
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+
+
+
+#contact p {
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+#contact .row > a {
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#contact .row {
+    justify-content: space-between;
+    background-color: white;
+    margin: clamp(8px, 5%, 32px);
+    padding: clamp(8px, 5%, 32px);
+    width: auto;
+
+}
+
+
+
+#about p {
+    flex: 1;
+    font-size: clamp(16px, 2vw, 24px);
+    text-align: justify;
+    padding-right: 2%;
+}
+
+#about .row {
+    align-items: flex-start;
+    background-color: white;
+    margin: clamp(8px, 5%, 32px);
+    padding: clamp(8px, 5%, 32px);
+    width: auto;
+
+}
+
+#about img {
+    width: clamp(280px, 30vw, 400px);
+    height: clamp(280px, 30vw, 400px);
+    object-fit: cover;
+    float: right;
+}
+
+footer {
+    text-align: center;
+    font-size: clamp(18px, 3vw, 32px);
+    background-color: rgb(0, 119, 255);
+    color: white;
+    padding: 32px;
+}
