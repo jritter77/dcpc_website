@@ -64,7 +64,7 @@ form .row {
 }
 
 form input {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 form .row div {
@@ -77,6 +77,20 @@ form .row div {
 
 form .row p {
     width: 40%;
+}
+
+.feedback {
+    margin: 0;
+    color: red;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+form .row p.feedback {
+    margin: 0;
+    color: red;
+    width: 100%;
+    margin-bottom: 16px;
 }
 
 input[type="checkbox"] {
@@ -253,6 +267,7 @@ input[type="checkbox"]:hover {
 .col {
     flex: 1;
 }
+
 
 
 
