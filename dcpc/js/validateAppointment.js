@@ -1,3 +1,5 @@
+import { post } from "./WebRequest";
+
 function getAllInputs(e) {
   let inputs = document.getElementsByTagName("input");
 
@@ -34,7 +36,7 @@ function getInputValues(e) {
   return vals;
 }
 
-function validateForm(e) {
+async function validateForm(e) {
   let valid = true;
   const vals = getInputValues();
 
@@ -73,7 +75,12 @@ function validateForm(e) {
   }
 
   if (valid) {
-    window.location.href = "../html/appointmentConfirmation.html";
+    const result = await post(
+      "../php/sendRequest.php",
+      JSON.stringify({ sub: "Test Email", msg: "This is a test." })
+    );
+    console.log(result);
+    //window.location.href = "../html/appointmentConfirmation.html";
   }
 }
 
