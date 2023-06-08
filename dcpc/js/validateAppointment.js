@@ -1,4 +1,4 @@
-import { post } from "./WebRequest";
+import { post } from "./WebRequest.js";
 
 function getAllInputs(e) {
   let inputs = document.getElementsByTagName("input");
