@@ -5,9 +5,9 @@ $req = json_decode($_POST['req']);
 $to = 'jakeritter77@gmail.com';
 $sub = $req->sub;
 $msg = $req->msg;
-$headers = 'From: dcpc@gmail.com';
+$headers = 'From: jr550@ghumboldt.edu' . "\r\n";
 
-$result = mail($to, $sub, $msg, "-fjr550@humboldt.edu");
+$result = mail($to, $sub, $msg, $headers);
 
 echo json_encode($result);
 
