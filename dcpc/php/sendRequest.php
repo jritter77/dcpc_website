@@ -7,7 +7,7 @@ $sub = $req->sub;
 $msg = $req->msg;
 $headers = 'From: dcpc@gmail.com';
 
-$result = mail($to, $sub, $msg, "-fdcpc@gmail.com");
+$result = mail($to, $sub, $msg, "-fjr550@humboldt.edu");
 
 echo json_encode($result);
 
