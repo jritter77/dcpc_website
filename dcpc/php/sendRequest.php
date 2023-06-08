@@ -2,12 +2,12 @@
 
 $req = json_decode($_POST['req']);
 
-$to = 'jakeritter77@gmail.com';
+$to = 'dcpc@gmail.com';
 $sub = $req->sub;
 $msg = $req->msg;
 $headers = 'From: dcpc@gmail.com';
 
-$result = mail($to, $sub, $msg);
+$result = mail($to, $sub, $msg, $headers);
 
 echo json_encode($result);
 
