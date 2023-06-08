@@ -1,7 +1,5 @@
 <?php
 
-ini_set()
-
 $req = json_decode($_POST['req']);
 
 $to = 'jakeritter77@gmail.com';
