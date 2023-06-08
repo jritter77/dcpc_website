@@ -80,7 +80,7 @@ async function validateForm(e) {
       JSON.stringify({ sub: "Test Email", msg: "This is a test." })
     );
     console.log(result);
-    //window.location.href = "../html/appointmentConfirmation.html";
+    window.location.href = "../html/appointmentConfirmation.html";
   }
 }
 
