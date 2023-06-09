@@ -220,9 +220,8 @@ input[type="checkbox"]:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-height: calc(100vh - 48px);
     justify-content: space-between;
-    min-height: 95vh;
-    max-height: 95vh;
 }
 
 #splash_bg {
@@ -288,7 +287,7 @@ input[type="checkbox"]:hover {
     width: auto;
     padding: min(5%, 32px);
     font-size: max(1.5vw, 10pt);
-    margin-bottom: clamp(64px, 10%, 128px);
+    margin-bottom: clamp(32px, 10%, 128px);
 }
 
 
