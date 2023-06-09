@@ -220,7 +220,7 @@ input[type="checkbox"]:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - 48px);
+    min-height: 95vh;
     justify-content: space-between;
 }
 
