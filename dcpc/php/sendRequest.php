@@ -8,7 +8,7 @@ $address = $req->address;
 $description = $req->description;
 $avail = $req->avail;
 
-$to = 'jakeritter77@gmail.com';
+$to = 'douglascitypc@gmail.com';
 $sub = "Work Request";
 $msg = "You have recieved a work request from:\n" . $name . "\n\n" .
         "Description:\n" . $description . "\n\n" .
