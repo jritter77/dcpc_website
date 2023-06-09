@@ -75,10 +75,7 @@ async function validateForm(e) {
   }
 
   if (valid) {
-    const result = await post(
-      "../php/sendRequest.php",
-      JSON.stringify({ sub: "Test Email", msg: "This is a test." })
-    );
+    const result = await post("../php/sendRequest.php", JSON.stringify(vals));
     console.log(result);
     window.location.href = "../html/appointmentConfirmation.html";
   }
