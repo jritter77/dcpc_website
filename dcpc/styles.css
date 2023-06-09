@@ -226,7 +226,7 @@ input[type="checkbox"]:hover {
 
 #splash img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     z-index: -1;
     object-fit: cover;
