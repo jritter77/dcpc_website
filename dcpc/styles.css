@@ -249,7 +249,7 @@ input[type="checkbox"]:hover {
     color: white;
     font-size: max(2vw, 16pt);
     text-decoration: none;
-    margin-bottom: max(10%, 64px);
+    margin-bottom: clamp(32px, 10%, 128px);
 }
 
 #splash a div {
