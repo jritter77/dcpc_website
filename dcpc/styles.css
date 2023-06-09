@@ -225,7 +225,7 @@ input[type="checkbox"]:hover {
 }
 
 #splash_bg {
-    background-image: url("images/splash.jpg");
+    background-image: url("images/splash_small.jpg");
     top: 0;
     left: 0;
     width: 100%;
